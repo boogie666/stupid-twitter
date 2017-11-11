@@ -1,0 +1,16 @@
+{
+
+  "manifest_version": 2,
+  "name": "stupid-twitter",
+  "version": "1.0",
+
+  "description": "Does something stupid",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["libs/jquery-3.2.1.js","libs/nlp_compromise.min.js" , "src/index.js"]
+    }
+  ]
+
+}
